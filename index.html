@@ -10,37 +10,49 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
 
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <script src="./app.js"></script>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-dark bg-nav">
       <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">Navbar</span>
+        <span class="navbar-brand mb-0 h1">SEARCH movie</span>
       </div>
     </nav>
 
     <div class="container">
       <div class="d-flex justify-content-center">
-        <div class="input-group mb-3">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Please enter movie name"
-            aria-label="Please enter movie name"
-            aria-describedby="button-addon2"
-          />
-          <button
-            class="btn btn-outline-secondary"
-            type="button"
-            id="button-addon2"
-          >
-            SEARCH
-          </button>
+        <div class="row">
+          <form id="search_form" class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="Enter movie name ..."  name = "search" id="search" type="text" class="validate">
+                <label for="search">Search</label>
+              </div>
+            </div>
+          </form>
         </div>
-      </div>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
