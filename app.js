@@ -17,7 +17,22 @@ function searchAnime(event) {
 }
 
 function updateDom(data){
-    data.results.forEach(anime => console.log(anime));
+  
+    const searchResults = document.getElementById('search-results');
+
+    searchResults.innerHTML = data.results.sort((a,b) => a.episodes - b.episodes)
+    .map(anime=> {
+        return `<div class="card" style="width: 18rem;">
+        <img src="${anime.image_url}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">${anime.title}</h5>
+          <p class="card-text">${anime.synopsis}</p>
+        </div>
+      </div>
+        `
+    })
+  
+    
 }
 
 function pageLoaded(){
