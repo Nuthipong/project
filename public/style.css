@@ -1,0 +1,29 @@
+.bg-nav {
+    background-color: #1D1D1F;
+}
+
+body {
+    margin: 0;
+    font-size: 1.25rem;
+    overflow-x: hidden;
+}
+
+.card-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: stretch;
+}
+
+.card-row > * {
+    flex-basis: 20rem;
+    flex-shrink: 0;
+}
+
+.card-row .card {
+    display: flex;
+    flex-direction: column;
+
+}
+
